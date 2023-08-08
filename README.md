@@ -32,7 +32,7 @@ complete authentication.
 passport.use(new EveOnlineSsoStrategy({
     clientID: EVEONLINE_CLIENT_ID,
     clientSecret: EVEONLINE_CLIENT_SECRET,
-    callbackURL: 'http://localhost:3000/auth/eveonline'
+    callbackURL: 'http://localhost:3000/auth/eveonline',
     scope: ''
   },
   function(accessToken, refreshToken, profile, cb) {
